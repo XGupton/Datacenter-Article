@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 .App-header {
-  background-color: #ffffff;
+  background-color: #ff0000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #252525;
+  margin-bottom: 1.5em;
 }
