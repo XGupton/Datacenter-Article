@@ -1,26 +1,26 @@
 import './App.css';
-import Header from './Header.jsx';
-import Paragraph from './Paragraph.jsx'
-import Title from './Title.jsx'
-import Image from './Image.jsx'
+import Header from './articleComponents/MainHeader.jsx';
+import Paragraph from './articleComponents/articleParagraph.jsx'
+import Title from './articleComponents/articleTitle.jsx'
+import Image from './articleComponents/articleImage.jsx'
 
 function App() {
   return (
     <div className="App">
         <Header/>
         <main className="mt-12 px-4">
-          <article className="max-w-2xl mx-auto">
+          <article className="max-w-3xl mx-auto">
             <p className="text-sm">May 2nd, 2025</p>
             <Title>Water Whales: AI Data Centers and Water Usage</Title>
-            <p className="text-base mt-2">By Xander Gupton</p>
+            <p className="text-base mt-2 mb-2 italic">By Xander Gupton</p>
             <Paragraph>
               28 years ago, the five-time world chess champion, Garry Kasparov, 
               stood up in defeat as he lost a 9-day long series 2.5-3.5 in one of the most 
               monumental chess matches ever played. Though, his opponent was not human, it 
               was a 1.4-ton supercomputer named Deep Blue. Developed by engineers at IBM, the 
               computer used brute-force learning algorithms to calculate over 200 million chess 
-              moves per second. It was one of the first times that Artificial Intelligence’s 
-              (AI’s) potential was shown to the world at large, where a machine could overcome 
+              moves per second. It was one of the first times that Artificial Intelligence`s 
+              (AI`s) potential was shown to the world at large, where a machine could overcome 
               one of the smartest minds in chess.
               </Paragraph>
               <Image 
@@ -74,7 +74,7 @@ function App() {
               </Paragraph>
               <Image 
               src="/images/water-consumption-scopes.png" 
-              alt="An example of data center’s operational water usage: on-site scope-1 water usage for data center cooling (via
+              alt="An example of data center's operational water usage: on-site scope-1 water usage for data center cooling (via
               cooling towers in the example), and off-site scope-2 water
               usage for electricity generation, from Making AI Less “Thirsty”" 
               caption="Example of a data center's operational water usage"
@@ -108,7 +108,7 @@ function App() {
               consumption could be much higher than reported. Further, the source of water pulled by 
               data centers is often not publicly reported, leading to more transparency concerns. 
               There is an overall need for better clarity regarding how much water is being used by 
-              data centers and where it’s being pulled from.
+              data centers and where it's being pulled from.
               </Paragraph>
               <Paragraph>
               Globally, the race for AI development is a major issue for various regions with a thirst 
@@ -119,12 +119,12 @@ function App() {
               are already quite a few countries which have been “expanding their data center footprints 
               while ignoring potential water risks. This trend has already resulted in increased water 
               scarcity in several regions” (Sharma). Some specific regions affected include Bengaluru, 
-              India, which recently endured its worst water crisis in the city’s 500-year history. The 
+              India, which recently endured its worst water crisis in the city's 500-year history. The 
               city already operates a data center capacity of 115 megawatts, which consume over 8 million 
               liters of water per day (Sharma). This problem comes with the added note that officials 
               in Bengaluru are planning to expand their cloud computing capacity, which would require 
               the construction of more data centers in the region. These plans were met with heavy 
-              resistance from local citizens, with the phrase “it’s not drought, it’s pillage” gaining 
+              resistance from local citizens, with the phrase “it's not drought, it's pillage” gaining 
               traction to influence public opinion of the developments (Gupta). While there were proposals 
               to switch from water cooling to air cooling for the data centers, experts predicted that 
               this plan would be equally environmentally damaging (Gupta).
@@ -134,7 +134,7 @@ function App() {
               centers being built when water is already a scarce resource. Chile has recently turned 
               its attention toward the race for AI, turning the city of Santiago into one of the larger 
               hubs for data centers in Latin America. This comes during a period where Chile is facing 
-              an unprecedented drought, with “more than half the country’s 19 million people living in 
+              an unprecedented drought, with “more than half the country's 19 million people living in 
               areas suffering from “severe water scarcity” (Branford). As discussed previously, data 
               centers would only serve to exacerbate this problem exponentially. Google already had 
               a data center built in Santiago and had plans to build another which would be “authorized 
@@ -149,14 +149,14 @@ function App() {
               which can impact their communities. Policymakers must heed activists calls and attempt 
               to work with the local population and corporations to develop data centers in a more 
               socially and environmentally responsible way.
-              </Paragraph>Chile-data-centers.jpg
+              </Paragraph>
               <Image 
               src="/images/Chile-data-centers.jpg" 
               alt="Overhead view of a Google data center in Quilicura, Chile" 
               caption="The Google data center in Quilicura, Chile"
               />
               <Paragraph>
-              Proponents of AI often claim that AI’s use cases regarding water conservation would 
+              Proponents of AI often claim that AI's use cases regarding water conservation would 
               counteract the resources required to cool data centers. There has been a growing body 
               of research dedicated to better measuring and optimizing water consumption in a variety 
               of applications. A recent literature review published in the Water Resources Management 
@@ -169,7 +169,7 @@ function App() {
               consuming and resource intensive and changes based on the circumstances of the problem 
               attempting to be solved. Thus, more research is required before the full benefits of AI 
               relating to water consumption are realized and until that point the water consumed by 
-              data centers won’t be offset by the new models being trained. While there is an ideal world 
+              data centers won't be offset by the new models being trained. While there is an ideal world 
               where AI will soon be able to greatly assist with these sorts of problems, we are unfortunately 
               not at that endpoint quite yet.
               </Paragraph>
@@ -182,7 +182,7 @@ function App() {
               to the concerns of local citizens and researchers and finding ways to adjust plans or by 
               developing newer technologies to help more efficiently cool these data centers is vital to 
               the boom that is occurring in the tech industry. Water is already on track to becoming one 
-              of the world’s scarcest resources, however that won’t make it any less essential. We are 
+              of the world's scarcest resources, however that won't make it any less essential. We are 
               quickly approaching a world lacking water, and we all know that a world without water is a 
               world without life.
               </Paragraph>
